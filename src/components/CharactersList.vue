@@ -1,10 +1,17 @@
 <script>
+import { store } from './../store.js';
+
 import SingleCharacter from './SingleCharacter.vue';
 
 export default {
     name: "CharactersList",
     components: {
-        SingleCharacter
+        SingleCharacter,
+    },
+    data() {
+        return {
+            store,
+        }
     }
 }
 
@@ -15,7 +22,7 @@ export default {
 <template>
     <section class="container">
 
-        <SingleCharacter />
+        <SingleCharacter v-for="character in store.charactersList" :details="character" />
 
     </section>
 </template>

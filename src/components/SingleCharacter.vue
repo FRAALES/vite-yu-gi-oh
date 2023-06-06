@@ -1,6 +1,9 @@
 <script>
 export default {
     name: "SingleCharacter",
+    props: {
+        details: Object
+    }
 }
 </script>
 
@@ -8,7 +11,7 @@ export default {
 <template>
     <!-- card character di esempio -->
     <div class="character text-center">
-        <img src="info.image" alt="info.name" class="img-fluid mb-3">
+        <img :src="details.card_images[0].image_url" alt="info.name" class="img-fluid mb-3">
         <h4>name</h4>
         <div class="font-weight-bold">archetype</div>
     </div>
