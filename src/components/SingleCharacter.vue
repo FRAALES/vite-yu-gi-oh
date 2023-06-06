@@ -1,23 +1,17 @@
 <script>
-import SingleCharacter from './SingleCharacter.vue';
-
 export default {
-    name: "CharactersList",
-    components: {
-        SingleCharacter
-    }
+    name: "SingleCharacter",
 }
-
-
 </script>
 
 
 <template>
-    <section class="container">
-
-        <SingleCharacter />
-
-    </section>
+    <!-- card character di esempio -->
+    <div class="character text-center">
+        <img src="info.image" alt="info.name" class="img-fluid mb-3">
+        <h4>name</h4>
+        <div class="font-weight-bold">archetype</div>
+    </div>
 </template>
 
 
