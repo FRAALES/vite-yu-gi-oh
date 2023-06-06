@@ -22,7 +22,12 @@ export default {
 <template>
     <section class="container">
 
-        <SingleCharacter v-for="character in store.charactersList" :details="character" />
+        <div class="row">
+            <div v-for="character in store.charactersList" :key="character.id" class="col-6 col-md-4 col-lg-3 mb5">
+                <SingleCharacter :details="character" />
+            </div>
+        </div>
+
 
     </section>
 </template>

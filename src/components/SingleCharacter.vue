@@ -12,8 +12,8 @@ export default {
     <!-- card character di esempio -->
     <div class="character text-center">
         <img :src="details.card_images[0].image_url" alt="info.name" class="img-fluid mb-3">
-        <h4>name</h4>
-        <div class="font-weight-bold">archetype</div>
+        <h4>{{ details.name }}</h4>
+        <div class="font-weight-bold">{{ details.archetype }}</div>
     </div>
 </template>
 
